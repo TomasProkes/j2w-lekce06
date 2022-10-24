@@ -28,11 +28,12 @@ public class AlkoholController {
 
   @PostMapping("")
   public Object form(@Valid @ModelAttribute("form") AlkoholForm form, BindingResult bindingResult) {
-/*
+
+
     if (form.getVek() < 18) {
       return "/alkohol/nizky-vek";
     }
-*/
+
 
     if (bindingResult.hasErrors()) {
       return "/alkohol/formular";
